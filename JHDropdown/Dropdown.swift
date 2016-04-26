@@ -35,11 +35,11 @@ public enum DropdownState: DropdownStatable {
   public var image: UIImage? {
     switch self {
     case .Success:
-      return UIImage(named: "success")
+      return UIImage(named: "success.png")
     case .Error:
-      return UIImage(named: "error")
+      return UIImage(named: "error.png")
     case .Warning:
-      return UIImage(named: "warning")
+      return UIImage(named: "warning.png")
     case .Custom(_ ,let customImage):
       return customImage
     }
