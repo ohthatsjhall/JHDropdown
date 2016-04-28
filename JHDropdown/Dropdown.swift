@@ -35,11 +35,11 @@ public enum DropdownState: DropdownStatable {
   public var image: UIImage? {
     switch self {
     case .Success:
-      return UIImage(named: "success.png")
+      return imageFromBundleNamed("success")
     case .Error:
-      return UIImage(named: "error.png")
+      return imageFromBundleNamed("error")
     case .Warning:
-      return UIImage(named: "warning.png")
+      return imageFromBundleNamed("warning")
     case .Custom(_ ,let customImage):
       return customImage
     }
@@ -51,6 +51,12 @@ public enum DropdownState: DropdownStatable {
   
   public var textColor: UIColor? {
     return UIColor.whiteColor()
+  }
+  
+  private func imageFromBundleNamed(named: String) -> UIImage? {
+    let bundle = NSBundle(forClass: Dropdown.self)
+    let image = UIImage(named: named, inBundle: bundle, compatibleWithTraitCollection: nil)
+    return image
   }
   
 }
