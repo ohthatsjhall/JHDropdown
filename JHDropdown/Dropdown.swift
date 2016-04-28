@@ -319,10 +319,10 @@ extension Dropdown {
         
         NSLayoutConstraint(
           item: statusLabel,
-          attribute: .Right,
+          attribute: .Leading,
           relatedBy: .Equal,
-          toItem: labelParentView,
-          attribute: .RightMargin,
+          toItem: imageView,
+          attribute: .Trailing,
           multiplier: 1.0,
           constant: 0.0),
         
