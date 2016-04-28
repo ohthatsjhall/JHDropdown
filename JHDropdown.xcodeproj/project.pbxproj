@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7BE15AF71CCDDF7000736BA0 /* JHDropdown.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BE15AF61CCDDF7000736BA0 /* JHDropdown.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7BE15AFF1CCDDFC600736BA0 /* Dropdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BE15AFE1CCDDFC600736BA0 /* Dropdown.swift */; };
+		7BFAAAFF1CD272E600DF28BB /* images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BFAAAFE1CD272E600DF28BB /* images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		7BE15AF61CCDDF7000736BA0 /* JHDropdown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHDropdown.h; sourceTree = "<group>"; };
 		7BE15AF81CCDDF7000736BA0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7BE15AFE1CCDDFC600736BA0 /* Dropdown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dropdown.swift; sourceTree = "<group>"; };
+		7BFAAAFE1CD272E600DF28BB /* images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +53,17 @@
 				7BE15AF61CCDDF7000736BA0 /* JHDropdown.h */,
 				7BE15AF81CCDDF7000736BA0 /* Info.plist */,
 				7BE15AFE1CCDDFC600736BA0 /* Dropdown.swift */,
+				7BFAAB001CD272FC00DF28BB /* Resources */,
 			);
 			path = JHDropdown;
+			sourceTree = "<group>";
+		};
+		7BFAAB001CD272FC00DF28BB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7BFAAAFE1CD272E600DF28BB /* images.xcassets */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BFAAAFF1CD272E600DF28BB /* images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
