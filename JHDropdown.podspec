@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JHDropdown"
-  s.version      = "0.1.4"
+  s.version      = "0.1.42"
   s.summary      = "JHDropdown is a lightweight dropdown message animation written entirely in Swift."
 
   s.description  = <<-DESC
@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '8.0'
   s.requires_arc = true
   s.source_files = 'JHDropdown/**/*.swift'
-  s.resource     = 'JHDropdown/Resources/*'
+  s.resource     = 'JHDropdown/*.xcassets'
 end
