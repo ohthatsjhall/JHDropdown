@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JHDropdown"
-  s.version      = "0.1.62"
+  s.version      = "0.1.64"
   s.summary      = "JHDropdown is a lightweight dropdown message animation written entirely in Swift."
 
   s.description  = <<-DESC
