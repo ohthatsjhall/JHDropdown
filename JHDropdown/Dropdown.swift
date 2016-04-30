@@ -17,7 +17,7 @@ public protocol DropdownStatable {
 
 public enum DropdownState: DropdownStatable {
   
-  case Success, Error, Warning, Custom(UIColor, UIImage)
+  case Success, Error, Warning, Custom(UIColor, UIImage?)
   
   public var backgroundColor: UIColor? {
     switch self {
@@ -41,7 +41,9 @@ public enum DropdownState: DropdownStatable {
     case .Warning:
       return imageFromBundleNamed("warning")
     case .Custom(_ ,let customImage):
-      return customImage
+      if let customImage = customImage {
+        return customImage
+      } else { return nil }
     }
   }
   
@@ -193,7 +195,7 @@ extension Dropdown {
       
       action?()
       drop.removeFromSuperview()
-      drop.transform = CGAffineTransformIdentity
+      //drop.transform = CGAffineTransformIdentity
       
     }
   }
