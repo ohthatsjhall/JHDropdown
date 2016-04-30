@@ -192,8 +192,8 @@ extension Dropdown {
     }) { (Bool) in
       
       action?()
-      drop.transform = CGAffineTransformIdentity
       drop.removeFromSuperview()
+      drop.transform = CGAffineTransformIdentity
       
     }
   }
