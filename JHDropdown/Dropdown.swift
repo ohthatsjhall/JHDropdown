@@ -17,7 +17,10 @@ public protocol DropdownStatable {
 
 public enum DropdownState: DropdownStatable {
   
-  case Success, Error, Warning, Custom(UIColor, UIImage?)
+  case Success
+  case Error
+  case Warning
+  case Custom(UIColor, UIImage?)
   
   public var backgroundColor: UIColor? {
     switch self {
@@ -176,7 +179,6 @@ extension Dropdown {
     )
     
     drop.setup(status, state: state)
-    //drop.action = action
     drop.updateHeight()
     
     topConstraint.constant = 0.0
@@ -195,8 +197,6 @@ extension Dropdown {
       
       action?()
       drop.removeFromSuperview()
-      //drop.transform = CGAffineTransformIdentity
-      
     }
   }
   
@@ -206,6 +206,7 @@ extension Dropdown {
   
   private func setup(status: String, state: DropdownStatable) {
     self.translatesAutoresizingMaskIntoConstraints = false
+    let screenHeight = UIScreen.mainScreen().bounds.height
     let labelParentView: UIView = self
     
     let backgroundView = UIView(frame: CGRect.zero)
@@ -231,7 +232,7 @@ extension Dropdown {
           toItem: self,
           attribute: .Top,
           multiplier: 1.0,
-          constant: -UIScreen.mainScreen().bounds.height),
+          constant: -screenHeight),
         
         NSLayoutConstraint(
           item: backgroundView,
@@ -257,7 +258,7 @@ extension Dropdown {
     imageView.translatesAutoresizingMaskIntoConstraints = false
     imageView.contentMode = .ScaleAspectFit
     imageView.image = state.image
-    addSubview(imageView) // Possbily need to:labelParentView. to beginning
+    addSubview(imageView)
     addConstraints(
       
       [
@@ -345,6 +346,5 @@ extension Dropdown {
   }
   
   
-  
-  // END
+
 }
