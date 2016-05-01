@@ -9,6 +9,11 @@
     <img src="http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat" alt="License: MIT" /> <br><br>
 </p>
 
+
+![](Animations/JHDropdownSuccess.gif)
+![](Animations/JHDropdownError.gif)
+![](Animations/JHDropdownCustom.gif)
+
 ## Installation
 1. Manually add files to your XCode Project
 2. Install using CocoaPods
