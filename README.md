@@ -28,12 +28,13 @@ pod 'JHDropdown'
 
 ## Usage
 
+#### Implementation
 Call Dropdown.show(_:) when you want to show the notification  
 
 ```swift
 Dropdown.show("Set a message for the dropdown here", state: .Success, duration: 2.0, action: nil)
 ```
-
+#### Customization
 Customize the dropdown by using the .Custom DropdownState
 
 ```swift
@@ -43,6 +44,7 @@ let color = UIColor.anyColor()
 Dropdown.show("Set a message for the dropdown here", state: .Custom(yourColor, yourImage), duration: 2.0, action: nil)
 ```
 
+#### Completion Handler
 Run code after the animation for the dropdown is complete
 
 ```swift
@@ -62,4 +64,3 @@ Justin Hall: @ohthatsjhall
 ## License
 
 JHDropdown is released under the MIT license. See LICENSE for details.
-
